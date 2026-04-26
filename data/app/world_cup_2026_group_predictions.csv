@@ -1,0 +1,73 @@
+group,home_team,away_team,tournament,neutral,year,predicted_result,home_win_probability,draw_probability,away_win_probability
+A,Mexico,South Africa,FIFA World Cup,True,2026,home_win,0.385,0.3,0.315
+A,Mexico,South Korea,FIFA World Cup,True,2026,draw,0.34,0.44,0.22
+A,Mexico,Czech Republic,FIFA World Cup,True,2026,draw,0.295,0.37,0.335
+A,South Africa,South Korea,FIFA World Cup,True,2026,home_win,0.395,0.365,0.24
+A,South Africa,Czech Republic,FIFA World Cup,True,2026,draw,0.3,0.465,0.235
+A,South Korea,Czech Republic,FIFA World Cup,True,2026,home_win,0.37,0.265,0.365
+B,Canada,Bosnia and Herzegovina,FIFA World Cup,True,2026,home_win,0.39,0.265,0.345
+B,Canada,Qatar,FIFA World Cup,True,2026,away_win,0.34,0.26,0.4
+B,Canada,Switzerland,FIFA World Cup,True,2026,away_win,0.29,0.27,0.44
+B,Bosnia and Herzegovina,Qatar,FIFA World Cup,True,2026,away_win,0.355,0.29,0.355
+B,Bosnia and Herzegovina,Switzerland,FIFA World Cup,True,2026,away_win,0.28,0.3,0.42
+B,Qatar,Switzerland,FIFA World Cup,True,2026,away_win,0.235,0.375,0.39
+C,Brazil,Morocco,FIFA World Cup,True,2026,home_win,0.575,0.185,0.24
+C,Brazil,Haiti,FIFA World Cup,True,2026,home_win,0.625,0.145,0.23
+C,Brazil,Scotland,FIFA World Cup,True,2026,home_win,0.665,0.165,0.17
+C,Morocco,Haiti,FIFA World Cup,True,2026,home_win,0.46,0.275,0.265
+C,Morocco,Scotland,FIFA World Cup,True,2026,home_win,0.52,0.315,0.165
+C,Haiti,Scotland,FIFA World Cup,True,2026,home_win,0.375,0.28,0.345
+D,United States,Paraguay,FIFA World Cup,True,2026,draw,0.305,0.4,0.295
+D,United States,Australia,FIFA World Cup,True,2026,draw,0.27,0.39,0.34
+D,United States,Turkey,FIFA World Cup,True,2026,draw,0.28,0.385,0.335
+D,Paraguay,Australia,FIFA World Cup,True,2026,draw,0.245,0.495,0.26
+D,Paraguay,Turkey,FIFA World Cup,True,2026,draw,0.27,0.465,0.265
+D,Australia,Turkey,FIFA World Cup,True,2026,home_win,0.51,0.115,0.375
+E,Germany,Curaçao,FIFA World Cup,True,2026,home_win,0.54,0.215,0.245
+E,Germany,Ivory Coast,FIFA World Cup,True,2026,home_win,0.47,0.18,0.35
+E,Germany,Ecuador,FIFA World Cup,True,2026,home_win,0.45,0.315,0.235
+E,Curaçao,Ivory Coast,FIFA World Cup,True,2026,away_win,0.325,0.31,0.365
+E,Curaçao,Ecuador,FIFA World Cup,True,2026,draw,0.29,0.485,0.225
+E,Ivory Coast,Ecuador,FIFA World Cup,True,2026,home_win,0.47,0.345,0.185
+F,Netherlands,Japan,FIFA World Cup,True,2026,home_win,0.495,0.28,0.225
+F,Netherlands,Sweden,FIFA World Cup,True,2026,draw,0.37,0.3777182449781,0.25228175502190003
+F,Netherlands,Tunisia,FIFA World Cup,True,2026,draw,0.3,0.44,0.26
+F,Japan,Sweden,FIFA World Cup,True,2026,draw,0.31,0.3527182449781,0.3372817550219
+F,Japan,Tunisia,FIFA World Cup,True,2026,draw,0.31,0.385,0.305
+F,Sweden,Tunisia,FIFA World Cup,True,2026,draw,0.32,0.35,0.33
+G,Belgium,Egypt,FIFA World Cup,True,2026,home_win,0.545,0.18,0.275
+G,Belgium,Iran,FIFA World Cup,True,2026,home_win,0.53,0.085,0.385
+G,Belgium,New Zealand,FIFA World Cup,True,2026,home_win,0.54,0.14,0.32
+G,Egypt,Iran,FIFA World Cup,True,2026,home_win,0.405,0.23,0.365
+G,Egypt,New Zealand,FIFA World Cup,True,2026,away_win,0.31,0.345,0.345
+G,Iran,New Zealand,FIFA World Cup,True,2026,away_win,0.26,0.365,0.375
+H,Spain,Cape Verde,FIFA World Cup,True,2026,home_win,0.425,0.35,0.225
+H,Spain,Saudi Arabia,FIFA World Cup,True,2026,home_win,0.495,0.28,0.225
+H,Spain,Uruguay,FIFA World Cup,True,2026,home_win,0.485,0.25,0.265
+H,Cape Verde,Saudi Arabia,FIFA World Cup,True,2026,draw,0.305,0.37,0.325
+H,Cape Verde,Uruguay,FIFA World Cup,True,2026,draw,0.225,0.445,0.33
+H,Saudi Arabia,Uruguay,FIFA World Cup,True,2026,away_win,0.31,0.185,0.505
+I,France,Senegal,FIFA World Cup,True,2026,away_win,0.435,0.085,0.48
+I,France,Iraq,FIFA World Cup,True,2026,home_win,0.67,0.15,0.18
+I,France,Norway,FIFA World Cup,True,2026,home_win,0.69,0.175,0.135
+I,Senegal,Iraq,FIFA World Cup,True,2026,away_win,0.34,0.245,0.415
+I,Senegal,Norway,FIFA World Cup,True,2026,away_win,0.325,0.27,0.405
+I,Iraq,Norway,FIFA World Cup,True,2026,home_win,0.485,0.3,0.215
+J,Argentina,Algeria,FIFA World Cup,True,2026,home_win,0.58,0.19,0.23
+J,Argentina,Austria,FIFA World Cup,True,2026,home_win,0.565,0.225,0.21
+J,Argentina,Jordan,FIFA World Cup,True,2026,home_win,0.565,0.2,0.235
+J,Algeria,Austria,FIFA World Cup,True,2026,home_win,0.38,0.315,0.305
+J,Algeria,Jordan,FIFA World Cup,True,2026,away_win,0.295,0.275,0.43
+J,Austria,Jordan,FIFA World Cup,True,2026,away_win,0.195,0.17,0.635
+K,Portugal,DR Congo,FIFA World Cup,True,2026,home_win,0.575,0.31,0.115
+K,Portugal,Uzbekistan,FIFA World Cup,True,2026,home_win,0.555,0.275,0.17
+K,Portugal,Colombia,FIFA World Cup,True,2026,home_win,0.565,0.28,0.155
+K,DR Congo,Uzbekistan,FIFA World Cup,True,2026,home_win,0.41,0.205,0.385
+K,DR Congo,Colombia,FIFA World Cup,True,2026,away_win,0.405,0.17,0.425
+K,Uzbekistan,Colombia,FIFA World Cup,True,2026,home_win,0.5,0.2,0.3
+L,England,Croatia,FIFA World Cup,True,2026,home_win,0.405,0.335,0.26
+L,England,Ghana,FIFA World Cup,True,2026,home_win,0.415,0.32,0.265
+L,England,Panama,FIFA World Cup,True,2026,home_win,0.615,0.205,0.18
+L,Croatia,Ghana,FIFA World Cup,True,2026,draw,0.405,0.44,0.155
+L,Croatia,Panama,FIFA World Cup,True,2026,home_win,0.445,0.43,0.125
+L,Ghana,Panama,FIFA World Cup,True,2026,away_win,0.365,0.2,0.435
