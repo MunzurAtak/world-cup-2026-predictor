@@ -28,6 +28,12 @@ from src.simulation.simulate_knockout import (
     save_bracket,
 )
 from src.simulation.prepare_app_data import prepare_app_data
+from src.simulation.combine_predictions import (
+    load_group_predictions,
+    load_knockout_bracket,
+    combine_predictions,
+    save_all_predictions,
+)
 
 
 def main():
@@ -66,7 +72,13 @@ def main():
     bracket = simulate_knockout_bracket(knockout_teams, model)
     save_bracket(bracket)
 
-    print("8. Preparing app data")
+    print("8. Combining all match predictions")
+    group_predictions = load_group_predictions()
+    knockout_bracket = load_knockout_bracket()
+    all_predictions = combine_predictions(group_predictions, knockout_bracket)
+    save_all_predictions(all_predictions)
+
+    print("9. Preparing app data")
     prepare_app_data()
 
     print("Pipeline finished.")

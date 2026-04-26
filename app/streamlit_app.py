@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 
-GROUP_MATCHES_PATH = "data/app/world_cup_2026_group_matches.csv"
+ALL_PREDICTIONS_PATH = "data/app/world_cup_2026_all_predictions.csv"
 GROUP_PREDICTIONS_PATH = "data/app/world_cup_2026_group_predictions.csv"
 GROUP_TABLES_PATH = "data/app/world_cup_2026_group_tables.csv"
 KNOCKOUT_TEAMS_PATH = "data/app/world_cup_2026_knockout_teams.csv"
@@ -19,14 +19,14 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    group_matches = pd.read_csv(GROUP_MATCHES_PATH)
+    all_predictions = pd.read_csv(ALL_PREDICTIONS_PATH)
     group_predictions = pd.read_csv(GROUP_PREDICTIONS_PATH)
     group_tables = pd.read_csv(GROUP_TABLES_PATH)
     knockout_teams = pd.read_csv(KNOCKOUT_TEAMS_PATH)
     knockout_bracket = pd.read_csv(KNOCKOUT_BRACKET_PATH)
 
     return (
-        group_matches,
+        all_predictions,
         group_predictions,
         group_tables,
         knockout_teams,
@@ -38,21 +38,34 @@ def format_probability(value):
     return f"{value:.1%}"
 
 
-def show_overview(group_predictions, group_tables, knockout_bracket):
+def format_probability_columns(df):
+    df = df.copy()
+
+    for column in [
+        "home_win_probability",
+        "draw_probability",
+        "away_win_probability",
+    ]:
+        if column in df.columns:
+            df[column] = df[column].apply(format_probability)
+
+    return df
+
+
+def show_overview(all_predictions, group_predictions, group_tables, knockout_bracket):
     st.title("World Cup 2026 Match Outcome Predictor")
 
     predicted_winner = knockout_bracket.iloc[-1]["winner"]
 
     col1, col2, col3, col4 = st.columns(4)
-
-    col1.metric("Group-stage matches", len(group_predictions))
+    col1.metric("Predicted matches", len(all_predictions))
     col2.metric("Teams", group_tables["team"].nunique())
     col3.metric("Knockout matches", len(knockout_bracket))
     col4.metric("Predicted winner", predicted_winner)
 
     st.subheader("Predicted outcome distribution")
 
-    outcome_counts = group_predictions["predicted_result"].value_counts().reset_index()
+    outcome_counts = all_predictions["predicted_result"].value_counts().reset_index()
     outcome_counts.columns = ["Predicted result", "Count"]
 
     fig = px.bar(
@@ -60,40 +73,38 @@ def show_overview(group_predictions, group_tables, knockout_bracket):
         x="Predicted result",
         y="Count",
         text="Count",
-        title="Predicted group-stage outcomes",
+        title="All predicted match outcomes",
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
 
-def show_group_matches(group_predictions):
-    st.header("Predicted Group-Stage Matches")
+def show_all_matches(all_predictions):
+    st.header("All Predicted Matches")
 
-    selected_group = st.selectbox(
-        "Select group",
-        sorted(group_predictions["group"].unique()),
+    stage_filter = st.multiselect(
+        "Stage",
+        sorted(all_predictions["stage"].unique()),
+        default=sorted(all_predictions["stage"].unique()),
     )
 
-    filtered = group_predictions[group_predictions["group"] == selected_group].copy()
+    filtered = all_predictions[all_predictions["stage"].isin(stage_filter)].copy()
 
     display_df = filtered[
         [
-            "group",
+            "stage",
+            "round",
             "home_team",
             "away_team",
             "predicted_result",
             "home_win_probability",
             "draw_probability",
             "away_win_probability",
+            "winner",
         ]
-    ].copy()
+    ]
 
-    for column in [
-        "home_win_probability",
-        "draw_probability",
-        "away_win_probability",
-    ]:
-        display_df[column] = display_df[column].apply(format_probability)
+    display_df = format_probability_columns(display_df)
 
     st.dataframe(display_df, use_container_width=True, hide_index=True)
 
@@ -101,14 +112,16 @@ def show_group_matches(group_predictions):
 def show_group_tables(group_tables):
     st.header("Predicted Group Tables")
 
-    selected_group = st.selectbox(
-        "Select group table",
-        sorted(group_tables["group"].unique()),
-    )
+    groups = sorted(group_tables["group"].unique())
 
-    filtered = group_tables[group_tables["group"] == selected_group]
+    for i in range(0, len(groups), 3):
+        cols = st.columns(3)
 
-    st.dataframe(filtered, use_container_width=True, hide_index=True)
+        for col, group in zip(cols, groups[i : i + 3]):
+            with col:
+                st.subheader(f"Group {group}")
+                filtered = group_tables[group_tables["group"] == group]
+                st.dataframe(filtered, use_container_width=True, hide_index=True)
 
 
 def show_knockout_teams(knockout_teams):
@@ -129,8 +142,30 @@ def show_knockout_teams(knockout_teams):
     st.dataframe(display_df, use_container_width=True, hide_index=True)
 
 
-def show_knockout_bracket(knockout_bracket):
-    st.header("Predicted Knockout Bracket")
+def show_bracket_visual(knockout_bracket):
+    st.header("Predicted Tournament Bracket")
+
+    rounds = knockout_bracket["round"].drop_duplicates().tolist()
+    columns = st.columns(len(rounds))
+
+    for col, round_name in zip(columns, rounds):
+        with col:
+            st.subheader(round_name)
+
+            round_matches = knockout_bracket[knockout_bracket["round"] == round_name]
+
+            for _, match in round_matches.iterrows():
+                st.markdown(
+                    f"""
+                    **Match {match['match_number']}**  
+                    {match['home_team']} vs {match['away_team']}  
+                    Winner: **{match['winner']}**
+                    """
+                )
+
+
+def show_knockout_details(knockout_bracket):
+    st.header("Knockout Match Details")
 
     selected_round = st.selectbox(
         "Select knockout round",
@@ -150,25 +185,17 @@ def show_knockout_bracket(knockout_bracket):
             "away_win_probability",
             "winner",
         ]
-    ].copy()
+    ]
 
-    for column in [
-        "home_win_probability",
-        "draw_probability",
-        "away_win_probability",
-    ]:
-        display_df[column] = display_df[column].apply(format_probability)
+    display_df = format_probability_columns(display_df)
 
     st.dataframe(display_df, use_container_width=True, hide_index=True)
-
-    st.subheader("Full knockout path")
-    st.dataframe(knockout_bracket, use_container_width=True, hide_index=True)
 
 
 def main():
     try:
         (
-            group_matches,
+            all_predictions,
             group_predictions,
             group_tables,
             knockout_teams,
@@ -176,25 +203,28 @@ def main():
         ) = load_data()
 
     except FileNotFoundError:
-        st.error("App data is missing. Run: python -m src.simulation.prepare_app_data")
+        st.error("App data is missing. Run: python run_pipeline.py")
         return
 
     page = st.sidebar.radio(
         "Navigation",
         [
             "Overview",
-            "Group Matches",
+            "All Matches",
             "Group Tables",
             "Knockout Teams",
-            "Knockout Bracket",
+            "Bracket Visual",
+            "Knockout Details",
         ],
     )
 
     if page == "Overview":
-        show_overview(group_predictions, group_tables, knockout_bracket)
+        show_overview(
+            all_predictions, group_predictions, group_tables, knockout_bracket
+        )
 
-    elif page == "Group Matches":
-        show_group_matches(group_predictions)
+    elif page == "All Matches":
+        show_all_matches(all_predictions)
 
     elif page == "Group Tables":
         show_group_tables(group_tables)
@@ -202,8 +232,11 @@ def main():
     elif page == "Knockout Teams":
         show_knockout_teams(knockout_teams)
 
-    elif page == "Knockout Bracket":
-        show_knockout_bracket(knockout_bracket)
+    elif page == "Bracket Visual":
+        show_bracket_visual(knockout_bracket)
+
+    elif page == "Knockout Details":
+        show_knockout_details(knockout_bracket)
 
 
 if __name__ == "__main__":

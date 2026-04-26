@@ -1,0 +1,104 @@
+stage,round,home_team,away_team,predicted_result,home_win_probability,draw_probability,away_win_probability,winner
+Group Stage,A,Mexico,South Africa,home_win,0.385,0.3,0.315,Mexico
+Group Stage,A,Mexico,South Korea,draw,0.34,0.44,0.22,Draw
+Group Stage,A,Mexico,Czech Republic,draw,0.295,0.37,0.335,Draw
+Group Stage,A,South Africa,South Korea,home_win,0.395,0.365,0.24,South Africa
+Group Stage,A,South Africa,Czech Republic,draw,0.3,0.465,0.235,Draw
+Group Stage,A,South Korea,Czech Republic,home_win,0.37,0.265,0.365,South Korea
+Group Stage,B,Canada,Bosnia and Herzegovina,home_win,0.39,0.265,0.345,Canada
+Group Stage,B,Canada,Qatar,away_win,0.34,0.26,0.4,Qatar
+Group Stage,B,Canada,Switzerland,away_win,0.29,0.27,0.44,Switzerland
+Group Stage,B,Bosnia and Herzegovina,Qatar,away_win,0.355,0.29,0.355,Qatar
+Group Stage,B,Bosnia and Herzegovina,Switzerland,away_win,0.28,0.3,0.42,Switzerland
+Group Stage,B,Qatar,Switzerland,away_win,0.235,0.375,0.39,Switzerland
+Group Stage,C,Brazil,Morocco,home_win,0.575,0.185,0.24,Brazil
+Group Stage,C,Brazil,Haiti,home_win,0.625,0.145,0.23,Brazil
+Group Stage,C,Brazil,Scotland,home_win,0.665,0.165,0.17,Brazil
+Group Stage,C,Morocco,Haiti,home_win,0.46,0.275,0.265,Morocco
+Group Stage,C,Morocco,Scotland,home_win,0.52,0.315,0.165,Morocco
+Group Stage,C,Haiti,Scotland,home_win,0.375,0.28,0.345,Haiti
+Group Stage,D,United States,Paraguay,draw,0.305,0.4,0.295,Draw
+Group Stage,D,United States,Australia,draw,0.27,0.39,0.34,Draw
+Group Stage,D,United States,Turkey,draw,0.28,0.385,0.335,Draw
+Group Stage,D,Paraguay,Australia,draw,0.245,0.495,0.26,Draw
+Group Stage,D,Paraguay,Turkey,draw,0.27,0.465,0.265,Draw
+Group Stage,D,Australia,Turkey,home_win,0.51,0.115,0.375,Australia
+Group Stage,E,Germany,Curaçao,home_win,0.54,0.215,0.245,Germany
+Group Stage,E,Germany,Ivory Coast,home_win,0.47,0.18,0.35,Germany
+Group Stage,E,Germany,Ecuador,home_win,0.45,0.315,0.235,Germany
+Group Stage,E,Curaçao,Ivory Coast,away_win,0.325,0.31,0.365,Ivory Coast
+Group Stage,E,Curaçao,Ecuador,draw,0.29,0.485,0.225,Draw
+Group Stage,E,Ivory Coast,Ecuador,home_win,0.47,0.345,0.185,Ivory Coast
+Group Stage,F,Netherlands,Japan,home_win,0.495,0.28,0.225,Netherlands
+Group Stage,F,Netherlands,Sweden,draw,0.37,0.3777182449781,0.2522817550219,Draw
+Group Stage,F,Netherlands,Tunisia,draw,0.3,0.44,0.26,Draw
+Group Stage,F,Japan,Sweden,draw,0.31,0.3527182449781,0.3372817550219,Draw
+Group Stage,F,Japan,Tunisia,draw,0.31,0.385,0.305,Draw
+Group Stage,F,Sweden,Tunisia,draw,0.32,0.35,0.33,Draw
+Group Stage,G,Belgium,Egypt,home_win,0.545,0.18,0.275,Belgium
+Group Stage,G,Belgium,Iran,home_win,0.53,0.085,0.385,Belgium
+Group Stage,G,Belgium,New Zealand,home_win,0.54,0.14,0.32,Belgium
+Group Stage,G,Egypt,Iran,home_win,0.405,0.23,0.365,Egypt
+Group Stage,G,Egypt,New Zealand,away_win,0.31,0.345,0.345,New Zealand
+Group Stage,G,Iran,New Zealand,away_win,0.26,0.365,0.375,New Zealand
+Group Stage,H,Spain,Cape Verde,home_win,0.425,0.35,0.225,Spain
+Group Stage,H,Spain,Saudi Arabia,home_win,0.495,0.28,0.225,Spain
+Group Stage,H,Spain,Uruguay,home_win,0.485,0.25,0.265,Spain
+Group Stage,H,Cape Verde,Saudi Arabia,draw,0.305,0.37,0.325,Draw
+Group Stage,H,Cape Verde,Uruguay,draw,0.225,0.445,0.33,Draw
+Group Stage,H,Saudi Arabia,Uruguay,away_win,0.31,0.185,0.505,Uruguay
+Group Stage,I,France,Senegal,away_win,0.435,0.085,0.48,Senegal
+Group Stage,I,France,Iraq,home_win,0.67,0.15,0.18,France
+Group Stage,I,France,Norway,home_win,0.69,0.175,0.135,France
+Group Stage,I,Senegal,Iraq,away_win,0.34,0.245,0.415,Iraq
+Group Stage,I,Senegal,Norway,away_win,0.325,0.27,0.405,Norway
+Group Stage,I,Iraq,Norway,home_win,0.485,0.3,0.215,Iraq
+Group Stage,J,Argentina,Algeria,home_win,0.58,0.19,0.23,Argentina
+Group Stage,J,Argentina,Austria,home_win,0.565,0.225,0.21,Argentina
+Group Stage,J,Argentina,Jordan,home_win,0.565,0.2,0.235,Argentina
+Group Stage,J,Algeria,Austria,home_win,0.38,0.315,0.305,Algeria
+Group Stage,J,Algeria,Jordan,away_win,0.295,0.275,0.43,Jordan
+Group Stage,J,Austria,Jordan,away_win,0.195,0.17,0.635,Jordan
+Group Stage,K,Portugal,DR Congo,home_win,0.575,0.31,0.115,Portugal
+Group Stage,K,Portugal,Uzbekistan,home_win,0.555,0.275,0.17,Portugal
+Group Stage,K,Portugal,Colombia,home_win,0.565,0.28,0.155,Portugal
+Group Stage,K,DR Congo,Uzbekistan,home_win,0.41,0.205,0.385,DR Congo
+Group Stage,K,DR Congo,Colombia,away_win,0.405,0.17,0.425,Colombia
+Group Stage,K,Uzbekistan,Colombia,home_win,0.5,0.2,0.3,Uzbekistan
+Group Stage,L,England,Croatia,home_win,0.405,0.335,0.26,England
+Group Stage,L,England,Ghana,home_win,0.415,0.32,0.265,England
+Group Stage,L,England,Panama,home_win,0.615,0.205,0.18,England
+Group Stage,L,Croatia,Ghana,draw,0.405,0.44,0.155,Draw
+Group Stage,L,Croatia,Panama,home_win,0.445,0.43,0.125,Croatia
+Group Stage,L,Ghana,Panama,away_win,0.365,0.2,0.435,Panama
+Knockout Stage,Round of 32,Switzerland,DR Congo,home_win,0.455,0.365,0.18,Switzerland
+Knockout Stage,Round of 32,Brazil,Algeria,home_win,0.59,0.16,0.25,Brazil
+Knockout Stage,Round of 32,Germany,Senegal,home_win,0.435,0.145,0.42,Germany
+Knockout Stage,Round of 32,Belgium,Egypt,home_win,0.545,0.18,0.275,Belgium
+Knockout Stage,Round of 32,Spain,Haiti,home_win,0.365,0.29,0.345,Spain
+Knockout Stage,Round of 32,Argentina,Canada,home_win,0.66,0.185,0.155,Argentina
+Knockout Stage,Round of 32,Portugal,Tunisia,home_win,0.47,0.37,0.16,Portugal
+Knockout Stage,Round of 32,England,Sweden,home_win,0.3,0.46,0.24,England
+Knockout Stage,Round of 32,Qatar,Paraguay,away_win,0.27,0.38,0.35,Paraguay
+Knockout Stage,Round of 32,Morocco,United States,home_win,0.56,0.305,0.135,Morocco
+Knockout Stage,Round of 32,Ivory Coast,Croatia,home_win,0.47,0.28,0.25,Ivory Coast
+Knockout Stage,Round of 32,New Zealand,Uruguay,away_win,0.31,0.27,0.42,Uruguay
+Knockout Stage,Round of 32,France,South Korea,home_win,0.49,0.37,0.14,France
+Knockout Stage,Round of 32,Iraq,South Africa,home_win,0.5,0.27,0.23,Iraq
+Knockout Stage,Round of 32,Jordan,Netherlands,away_win,0.205,0.115,0.68,Netherlands
+Knockout Stage,Round of 32,Mexico,Australia,away_win,0.305,0.35,0.345,Australia
+Knockout Stage,Round of 16,Switzerland,Australia,home_win,0.445,0.285,0.27,Switzerland
+Knockout Stage,Round of 16,Brazil,Netherlands,away_win,0.325,0.325,0.35,Netherlands
+Knockout Stage,Round of 16,Germany,Iraq,home_win,0.49,0.22,0.29,Germany
+Knockout Stage,Round of 16,Belgium,France,away_win,0.335,0.165,0.5,France
+Knockout Stage,Round of 16,Spain,Uruguay,home_win,0.485,0.25,0.265,Spain
+Knockout Stage,Round of 16,Argentina,Ivory Coast,home_win,0.695,0.15,0.155,Argentina
+Knockout Stage,Round of 16,Portugal,Morocco,home_win,0.69,0.175,0.135,Portugal
+Knockout Stage,Round of 16,England,Paraguay,home_win,0.465,0.32,0.215,England
+Knockout Stage,Quarter-finals,Switzerland,England,away_win,0.315,0.345,0.34,England
+Knockout Stage,Quarter-finals,Netherlands,Portugal,home_win,0.445,0.385,0.17,Netherlands
+Knockout Stage,Quarter-finals,Germany,Argentina,home_win,0.535,0.16,0.305,Germany
+Knockout Stage,Quarter-finals,France,Spain,home_win,0.44,0.255,0.305,France
+Knockout Stage,Semi-finals,England,France,home_win,0.365,0.315,0.32,England
+Knockout Stage,Semi-finals,Netherlands,Germany,away_win,0.31,0.24,0.45,Germany
+Knockout Stage,Final,England,Germany,away_win,0.32,0.25,0.43,Germany

@@ -8,6 +8,7 @@ FILES_TO_COPY = {
     "data/processed/world_cup_2026_group_tables.csv": "data/app/world_cup_2026_group_tables.csv",
     "data/processed/world_cup_2026_knockout_teams.csv": "data/app/world_cup_2026_knockout_teams.csv",
     "data/processed/world_cup_2026_knockout_bracket.csv": "data/app/world_cup_2026_knockout_bracket.csv",
+    "data/processed/world_cup_2026_all_predictions.csv": "data/app/world_cup_2026_all_predictions.csv",
 }
 
 
