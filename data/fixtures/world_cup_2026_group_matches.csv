@@ -1,0 +1,73 @@
+group,home_team,away_team,tournament,neutral,year
+A,Mexico,South Africa,FIFA World Cup,True,2026
+A,Mexico,South Korea,FIFA World Cup,True,2026
+A,Mexico,Czech Republic,FIFA World Cup,True,2026
+A,South Africa,South Korea,FIFA World Cup,True,2026
+A,South Africa,Czech Republic,FIFA World Cup,True,2026
+A,South Korea,Czech Republic,FIFA World Cup,True,2026
+B,Canada,Bosnia and Herzegovina,FIFA World Cup,True,2026
+B,Canada,Qatar,FIFA World Cup,True,2026
+B,Canada,Switzerland,FIFA World Cup,True,2026
+B,Bosnia and Herzegovina,Qatar,FIFA World Cup,True,2026
+B,Bosnia and Herzegovina,Switzerland,FIFA World Cup,True,2026
+B,Qatar,Switzerland,FIFA World Cup,True,2026
+C,Brazil,Morocco,FIFA World Cup,True,2026
+C,Brazil,Haiti,FIFA World Cup,True,2026
+C,Brazil,Scotland,FIFA World Cup,True,2026
+C,Morocco,Haiti,FIFA World Cup,True,2026
+C,Morocco,Scotland,FIFA World Cup,True,2026
+C,Haiti,Scotland,FIFA World Cup,True,2026
+D,United States,Paraguay,FIFA World Cup,True,2026
+D,United States,Australia,FIFA World Cup,True,2026
+D,United States,Turkey,FIFA World Cup,True,2026
+D,Paraguay,Australia,FIFA World Cup,True,2026
+D,Paraguay,Turkey,FIFA World Cup,True,2026
+D,Australia,Turkey,FIFA World Cup,True,2026
+E,Germany,Curaçao,FIFA World Cup,True,2026
+E,Germany,Ivory Coast,FIFA World Cup,True,2026
+E,Germany,Ecuador,FIFA World Cup,True,2026
+E,Curaçao,Ivory Coast,FIFA World Cup,True,2026
+E,Curaçao,Ecuador,FIFA World Cup,True,2026
+E,Ivory Coast,Ecuador,FIFA World Cup,True,2026
+F,Netherlands,Japan,FIFA World Cup,True,2026
+F,Netherlands,Sweden,FIFA World Cup,True,2026
+F,Netherlands,Tunisia,FIFA World Cup,True,2026
+F,Japan,Sweden,FIFA World Cup,True,2026
+F,Japan,Tunisia,FIFA World Cup,True,2026
+F,Sweden,Tunisia,FIFA World Cup,True,2026
+G,Belgium,Egypt,FIFA World Cup,True,2026
+G,Belgium,Iran,FIFA World Cup,True,2026
+G,Belgium,New Zealand,FIFA World Cup,True,2026
+G,Egypt,Iran,FIFA World Cup,True,2026
+G,Egypt,New Zealand,FIFA World Cup,True,2026
+G,Iran,New Zealand,FIFA World Cup,True,2026
+H,Spain,Cape Verde,FIFA World Cup,True,2026
+H,Spain,Saudi Arabia,FIFA World Cup,True,2026
+H,Spain,Uruguay,FIFA World Cup,True,2026
+H,Cape Verde,Saudi Arabia,FIFA World Cup,True,2026
+H,Cape Verde,Uruguay,FIFA World Cup,True,2026
+H,Saudi Arabia,Uruguay,FIFA World Cup,True,2026
+I,France,Senegal,FIFA World Cup,True,2026
+I,France,Iraq,FIFA World Cup,True,2026
+I,France,Norway,FIFA World Cup,True,2026
+I,Senegal,Iraq,FIFA World Cup,True,2026
+I,Senegal,Norway,FIFA World Cup,True,2026
+I,Iraq,Norway,FIFA World Cup,True,2026
+J,Argentina,Algeria,FIFA World Cup,True,2026
+J,Argentina,Austria,FIFA World Cup,True,2026
+J,Argentina,Jordan,FIFA World Cup,True,2026
+J,Algeria,Austria,FIFA World Cup,True,2026
+J,Algeria,Jordan,FIFA World Cup,True,2026
+J,Austria,Jordan,FIFA World Cup,True,2026
+K,Portugal,DR Congo,FIFA World Cup,True,2026
+K,Portugal,Uzbekistan,FIFA World Cup,True,2026
+K,Portugal,Colombia,FIFA World Cup,True,2026
+K,DR Congo,Uzbekistan,FIFA World Cup,True,2026
+K,DR Congo,Colombia,FIFA World Cup,True,2026
+K,Uzbekistan,Colombia,FIFA World Cup,True,2026
+L,England,Croatia,FIFA World Cup,True,2026
+L,England,Ghana,FIFA World Cup,True,2026
+L,England,Panama,FIFA World Cup,True,2026
+L,Croatia,Ghana,FIFA World Cup,True,2026
+L,Croatia,Panama,FIFA World Cup,True,2026
+L,Ghana,Panama,FIFA World Cup,True,2026
