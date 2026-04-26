@@ -229,11 +229,9 @@ python run_pipeline.py
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/world-cup-2026-predictor.git
+git clone https://github.com/MunzurAtak/world-cup-2026-predictor.git
 cd world-cup-2026-predictor
 ```
-
-Replace `YOUR_USERNAME` with your own GitHub username.
 
 ---
 
